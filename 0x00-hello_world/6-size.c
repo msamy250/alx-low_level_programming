@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- *Prints sizes of types on the computer for documentation or understanding
+ *Prints sizes of types on the computer 
+ *for documentation or understanding
  *Return:0
 */
 int main(void)
