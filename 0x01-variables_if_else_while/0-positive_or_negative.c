@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* main - function */
+/**
+ * main - function print whether the number stored
+ * in the variable n is positive or negativei */
 int main(void)
 {
 	int n;
