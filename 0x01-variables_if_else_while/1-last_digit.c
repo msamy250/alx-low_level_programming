@@ -2,20 +2,21 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
+/*betty style doc for function main goes there */
 /**
- * main - print whether the number stored in the variable n
- * is positive or negative.
- * Return: Always The number, followed by string
+ *main - print whether the number stored in the variable n
+ *is positive or negative.
+ *Return: Always The number, followed by string
  */
 int main(void)
 {
 	int n;
+	int ln;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/*your code goes there */
-	int ln = n % 10
+	ln = n % 10;
 
 	if (ln > 5)
 	{
