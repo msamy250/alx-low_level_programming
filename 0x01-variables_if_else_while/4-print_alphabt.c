@@ -11,12 +11,13 @@ int main(void)
 	char excludechar[] = { 'q', 'e' };
 
 	int mumberexcluded = sizeof(excludechar) / sizeof(excludechar[0]);
+	int excluded = 0;
+	int i = 0;
 
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		int excluded = 0;
 
-		for (int i = 0; i < mumberexcluded; i++)
+		for (i = 0; i < mumberexcluded; i++)
 		{
 
 		if (letter == excludechar[i])
@@ -32,4 +33,5 @@ int main(void)
 	putchar('\n');
 		}
 	return (0);
+}
 }
