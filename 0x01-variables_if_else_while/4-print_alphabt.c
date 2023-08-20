@@ -8,30 +8,14 @@
 int main(void)
 {
 	char letter;
-	char excludechar[] = { 'q', 'e' };
-
-	int mumberexcluded = sizeof(excludechar) / sizeof(excludechar[0]);
-	int excluded = 0;
-	int i = 0;
 
 	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-
-		for (i = 0; i < mumberexcluded; i++)
 		{
-
-		if (letter == excludechar[i])
-		{
-			excluded = 1;
-			break;
-		}
-
-		if (!excluded)
-		{
-			putchar(letter);
+			if (!(letter=='e'&& letter=='q'))
+				putchar(letter);
 		}
 	putchar('\n');
-		}
+
 	return (0);
 }
-}
+
