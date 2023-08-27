@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- *more_numbers - print numbers
- *@i: numbers from 0  to 14
- *@c: The number of rows
+ *more_numbers - print numbers from 0 to 14
  */
 void more_numbers(void)
 {
