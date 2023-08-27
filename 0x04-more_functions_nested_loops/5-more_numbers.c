@@ -2,8 +2,8 @@
 
 /**
  *more_numbers - print numbers
- *@i: numbers
- *@c: count the rows
+ *@i: numbers from 0  to 14
+ *@c: The number of rows
  */
 void more_numbers(void)
 {
@@ -14,15 +14,11 @@ void more_numbers(void)
 	{
 		for (i = 0; i <= 14; i++)
 		{
-			if (i >= 10)
+			if (i > 9)
 			{
 				_putchar(i / 10 + '0');
+			}
 				_putchar(i % 10 + '0');
-			}
-			else
-			{
-				_putchar(i + '0');
-			}
 		}
 	_putchar('\n');
 	}
