@@ -2,6 +2,8 @@
 
 /**
  *more_numbers - print numbers
+ *@i: numbers
+ *@c: count the rows
  */
 void more_numbers(void)
 {
