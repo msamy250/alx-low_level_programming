@@ -7,8 +7,8 @@
  */
 void print_rev(char *s)
 {
-	int l = sizeof(*s) / sizeof(s[0]);
 	int i;
+	int l = 0;
 
 	while (s[l] != '\0')
 	{
@@ -19,6 +19,5 @@ void print_rev(char *s)
 	{
 		_putchar(s[i]);
 	}
-
 	_putchar('\n');
 }
