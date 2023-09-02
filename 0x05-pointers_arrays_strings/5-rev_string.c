@@ -13,18 +13,5 @@ void rev_string(char *s)
 	{
 		l++;
 	}
-
-	int start = 0;
-	int end = l - 1;
-	char c; 
-
-	while (start < end)
-	{
-		c = s[start];
-		s[start] = s[end];
-		s[end] = c;
-
-		start++;
-		end--;
-	}
+	
 }
