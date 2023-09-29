@@ -17,11 +17,14 @@ int _sqrt_recursion(int n)
 /*value - function to calculate*/
 int value(int n, int x)
 {
-	if (x * x < n)
-		return (value(n, x + 1));
+	if (x * x == n)
+    {
+        return (x);
+    }
 }
 
-else
+else (x * x < n)
 {
-	return (x);
+    return (value(n, x + 1));
+
 }
