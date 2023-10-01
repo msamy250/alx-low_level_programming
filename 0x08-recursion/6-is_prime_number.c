@@ -2,7 +2,7 @@
 
 /**
  *prime_checker - function to check the prime number
- * is_prime_number - function to check if the number prime
+ *is_prime_number - function to check if the number prime
  *@n: The number to find out if it  prime
  *@x: the checker
  *Return: 1 if the number  is  prime
