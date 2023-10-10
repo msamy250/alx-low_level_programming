@@ -29,9 +29,10 @@ char *_strdup(char *str)
 	}
     str2[length] = '\0';
 
-    if (i > length)
+    if (i >= length)
 	{
-		return (NULL);
+		free(str2);
+        return (NULL);
 	}
 	return (str2);
 }
