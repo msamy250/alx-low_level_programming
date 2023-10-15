@@ -5,11 +5,9 @@
  *main - sum two numbers.
  *@argc: count of the arguments
  *@argv: an array of pointers to the strings
- *@i: number of count in argv array
- *@add: the sum
  *Return: 0;
  */
-int main(int argc, char **argv[])
+int main(int argc, char *argv[])
 {
 	int add = 0;
 	int i;
@@ -18,16 +16,17 @@ int main(int argc, char **argv[])
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
-
+		{
 			for (z = 0; argv[i][z] != '\0'; z++)
 
 				if (!isdigit(argv[i][z]))
 				{
 					printf("Error\n");
-                    return (1);
+					return (1);
 				}
 
-		add = add + atoi(argv[i]);
+			add = add + atoi(argv[i]);
+		}
 
 		printf("%d\n", add);
 	}
