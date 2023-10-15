@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
 	if (argc > 1 && isdigit(atoi(argv[i])))
 	{
 		for (i = 0; i < argc; i++)
-        
-		add = add + atoi(argv[i]);
+
+			add = add + atoi(argv[i]);
 
 		printf("%d\n", add);
 	}
