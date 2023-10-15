@@ -9,7 +9,7 @@
  *@add: the sum
  *Return: 0;
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv[])
 {
 	int add = 0;
 	int i;
@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 				if (!isdigit(argv[i][z]))
 				{
 					printf("Error\n");
+                    return (1);
 				}
 
 		add = add + atoi(argv[i]);
