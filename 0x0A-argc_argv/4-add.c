@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	int add;
 	int i;
 
-	if (argc > 1)
+	if (isdigit argv[i])
 	{
 		for (i = 1; i < argc; i++)
 
