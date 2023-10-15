@@ -11,15 +11,13 @@
  */
 int main(int argc, char *argv[])
 {
-	int add;
+	int add = 0;
 	int i;
 
-	if (isdigit argv[i])
+	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
-
-			add = 0;
-
+        
 		add = add + atoi(argv[i]);
 
 		printf("%d\n", add);
