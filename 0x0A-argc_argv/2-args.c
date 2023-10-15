@@ -5,7 +5,6 @@
  *main - the number of arguments passed into it.
  *@argc: count of the arguments
  *@argv: an array of pointers to the strings
- *@i: number of loops
  *Return: 0;
  */
 int main(int argc, char *argv[])
