@@ -44,10 +44,10 @@ create a space for the second dimention with malloc in for loop
 
 			while (i >= 0)
 			{
-				free(grid[i--]);
+				free(grid[j]);
+			}
 			free(grid);
 			return (NULL);
-			}
 
 		for (j = 0; j < width; j++)
 		{
@@ -57,6 +57,3 @@ create a space for the second dimention with malloc in for loop
 
 	return (grid);
 }
-
-
-
