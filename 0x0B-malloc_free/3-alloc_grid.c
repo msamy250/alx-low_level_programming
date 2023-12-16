@@ -11,14 +11,6 @@
 int **alloc_grid(int width, int height)
 {
 
-	/* create a pointer with integer type
-- if the parmenters equalls zero or less return null
-- create a space in the memory for the first dimention ( malloc)
-- free if null
-create a space for the second dimention with malloc in for loop
-	if  the second d  == null free the all the second  dimention of array then free all grid
-	if not intiialize the 2 D with zero */
-
 	int **grid;
 	int i;
 	int j;
@@ -37,7 +29,7 @@ create a space for the second dimention with malloc in for loop
 
 	for (i = 0; i < height; i++)
 	{
-		grid[i] = malloc(width * (sizeof(int *)));
+		grid[i] = malloc(width * sizeof(int));
 
 		if (grid[i] == NULL)
 
