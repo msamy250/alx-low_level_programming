@@ -1,27 +1,28 @@
 #include "main.h"
+
 /**
- *string_nconcat - function that concatenates two strings
+ *_calloc - function that allocate memory
  *@nmemb: number of elements
  *@size: size of element
  *Return: pointer
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-     void *ptr;
+	void *ptr;
 
-    if (nmemb == 0 || size == 0)
-    {
-        return (NULL);
-    }
+	if (nmemb == 0 || size == 0)
+	{
+		return (NULL);
+	}
 
-    ptr = malloc( nmemb * (sizeof(int)));
+	ptr = malloc(nmemb * (sizeof(int)));
 
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
 
-    if (ptr == NULL)
-    {
-        return (NULL);
-    }
-    memset(ptr, 0, nmemb * size);
+	memset(ptr, 0, nmemb * size);
 
-    return (ptr);
+	return (ptr);
 }
