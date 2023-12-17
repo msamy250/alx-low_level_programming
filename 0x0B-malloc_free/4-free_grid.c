@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /**
- *alloc_grid - two dimential arrays
- *@width: width
+ *free_grid - free two dimential arrays
+ *@grid: the 2d grid
  *@height: height
  *Return: pointer to function
  */
