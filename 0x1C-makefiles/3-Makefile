@@ -1,0 +1,38 @@
+# Makefile
+
+CC = gcc
+
+SRC = main.c school.c
+
+OBJ = $(SRC:.c=.o)
+
+NAME = school
+
+# Program to delete files
+RM = rm -f
+
+# Default rule
+all: $(NAME)
+
+# Linking the executable
+$(NAME): $(OBJ)
+	$(CC) $^ -o $@
+
+%.o: %.c
+	$(CC) -c -o $@ $<
+
+# Clean: Deletes Emacs and Vim temporary files along with the executable
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+# Fclean: Deletes Emacs and Vim temporary files, the executable, and the object files
+fclean: clean oclean
+
+# Re: Forces recompilation of all source files
+re: fclean all
+
+# Phony targets
+.PH
