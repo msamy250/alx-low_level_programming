@@ -1,2 +1,4 @@
+EXECUTABLE = school
+
 all: 
-    gcc main.c holberton.c -o holberton
+	gcc main.c school.c -o $(EXECUTABLE)
